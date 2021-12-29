@@ -43,6 +43,7 @@
             const light = new THREE.AmbientLight( 0x404040 );
 
             var geometry = new THREE.BoxGeometry( 1, 1, 1);
+            //texture
             var texture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/ARSTCreations/webpage/main/simplethree/grass.jpg');
             var material = new THREE.MeshBasicMaterial( { color: 0xffffff, map:texture} );
 
