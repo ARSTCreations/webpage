@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset-UTF-8" />
+    <script src="three.js"></script>
+  </head>
+  <body>
+        <div align="center">
+
+            <button onclick="
+            cube.position.x -= moveamount
+            ">Left</button> 
+
+            <button onclick="
+            cube.position.y += moveamount
+            ">Up</button>
+
+            <button onclick="
+            cube.position.y -= moveamount
+            ">Down</button>
+
+            <button onclick="
+            cube.position.x += moveamount
+            ">Right</button> 
+
+            <button onclick="
+            cube.position.x = 0
+            cube.position.y = 0
+            ">Reset Pos</button> 
+
+            <button onclick="rotamount=rotamount-0.01;">"-"</button>
+            <button onclick="rotamount=rotamount+0.01;">"+"</button>
+            <button onclick="rotamount=rotamount=0;">stop</button>
+
+        </div>
+        <script>
+            var moveamount = 0.5;
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight, 0.1, 1000);
+            var renderer = new THREE.WebGLRenderer({antialias: true});
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            document.body.appendChild( renderer.domElement );
+            
+            const light = new THREE.AmbientLight( 0x404040 );
+
+            var geometry = new THREE.BoxGeometry( 1, 1, 1);
+            var texture = new THREE.TextureLoader().load('https://media.istockphoto.com/photos/light-grey-black-slate-stone-background-or-texture-picture-id1164746310?b=1&k=20&m=1164746310&s=170667a&w=0&h=ucTajYum0z23aJEUVvisvAN1S1MGpLIS3n49e6CXlfs=');
+            var material = new THREE.MeshBasicMaterial( { color: 0xffffff, map:texture} );
+
+
+            var cube = new THREE.Mesh( geometry, material );
+            scene.add( cube );
+            scene.add( light );
+
+            camera.position.z = 5;
+
+            var rotamount = 0;
+            function animate() {
+                requestAnimationFrame( animate );
+                cube.rotation.x += rotamount;
+                cube.rotation.y += rotamount;
+                cube.rotation.z -= rotamount;
+                renderer.render( scene, camera );
+            }
+            animate();
+        </script>
+  </body>
+</html>
