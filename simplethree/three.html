@@ -2,59 +2,85 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset-UTF-8" />
     <script src="three.js"></script>
+    <title>ARSTCreation SimpleThreeJS</title>
   </head>
   <body>
         <div align="center">
+          <b>by: 202010370311440</b><br>
+          Simple Cube Texturing and Animation in threeJS<br><br>
+        </div>
+        <div align="center">
+            <button onclick="cube.position.x -= moveamount">Move Left</button> 
+            <button onclick="cube.position.y += moveamount">Move Up</button>
+            <button onclick="cube.position.y -= moveamount">Move Down</button>
+            <button onclick="cube.position.x += moveamount">Move Right</button> 
+            <button onclick="
+              cube.position.x = 0
+              cube.position.y = 0
+            ">Reset x,y Position</button> 
+
+            <br><br>
+            <button onclick="rotamount=rotamount-0.01;">"- Rotation speed"</button>
+            <button onclick="rotamount=rotamount+0.01;">"+ Rotation speed"</button>
+            <button onclick="rotamount=rotamount=0;">Stop Rotation</button>
+
+            <br><br>
+            <button onclick="
+              material = new THREE.MeshBasicMaterial( { color: hexColor, map:texture} );
+              cube = new THREE.Mesh( geometry, material );
+              scene.remove(scene.children[0]);
+              scene.add(cube);
+            ">Turn On Texture</button> 
 
             <button onclick="
-            cube.position.x -= moveamount
-            ">Left</button> 
+              material = new THREE.MeshBasicMaterial( { color: hexColor} );
+              cube = new THREE.Mesh( geometry, material );
+              scene.remove(scene.children[0]);
+              scene.add(cube);
+            ">Turn Off Texture</button>
+
+            <label for="hexColor"> Colour: </label>
+            <input type="text" placeholder="blue, red, green, cyan, magenta..." id="input">
 
             <button onclick="
-            cube.position.y += moveamount
-            ">Up</button>
+              hexColor = document.getElementById('input').value;
+              material = new THREE.MeshBasicMaterial( { color: hexColor} );
+              cube = new THREE.Mesh( geometry, material );
+              scene.remove(scene.children[0]);
+              scene.add(cube);
+            ">Change Color</button>
 
-            <button onclick="
-            cube.position.y -= moveamount
-            ">Down</button>
-
-            <button onclick="
-            cube.position.x += moveamount
-            ">Right</button> 
-
-            <button onclick="
-            cube.position.x = 0
-            cube.position.y = 0
-            ">Reset Pos</button> 
-
-            <button onclick="rotamount=rotamount-0.01;">"-"</button>
-            <button onclick="rotamount=rotamount+0.01;">"+"</button>
-            <button onclick="rotamount=rotamount=0;">stop</button>
-
+            <br><br>
         </div>
         <script>
+            //Clear TextField
+            document.getElementById('input').value = "";
+
+            //Values
             var moveamount = 0.5;
+            var rotamount = 0;
+            var hexColor = 0xffffff;
+
+            //Camera
             var scene = new THREE.Scene();
             var camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight, 0.1, 1000);
             var renderer = new THREE.WebGLRenderer({antialias: true});
             renderer.setSize( window.innerWidth, window.innerHeight );
             document.body.appendChild( renderer.domElement );
-            
-            const light = new THREE.AmbientLight( 0x404040 );
-
-            var geometry = new THREE.BoxGeometry( 1, 1, 1);
-            //texture
-            var texture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/ARSTCreations/webpage/main/simplethree/grass.jpg');
-            var material = new THREE.MeshBasicMaterial( { color: 0xffffff, map:texture} );
-
-
-            var cube = new THREE.Mesh( geometry, material );
-            scene.add( cube );
-            scene.add( light );
-
             camera.position.z = 5;
 
-            var rotamount = 0;
+            //Geometry
+            var geometry = new THREE.BoxGeometry( 1, 1, 1);
+            
+            //Texture
+            var texture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/ARSTCreations/webpage/main/simplethree/grass.jpg');
+            var material = new THREE.MeshBasicMaterial( { color: hexColor, map:texture} );
+
+            //Cube
+            var cube = new THREE.Mesh( geometry, material );
+            scene.add( cube );
+
+            //Animation
             function animate() {
                 requestAnimationFrame( animate );
                 cube.rotation.x += rotamount;
