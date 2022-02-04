@@ -1,40 +1,403 @@
 <!DOCTYPE html>
-<html>
-    <!refresh meta tag>
-    <!meta http-equiv="refresh" content="2">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <title>arstSTATIX!</title>
+  </head>
 
-    <title>ARSTCreation HTML Base</title>
-
-    <style>
-        body,html{
-            height: 150%;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        .bg{
-            color:white;
-            background-image: linear-gradient(white,white);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
-
-    <body class="bg">
-        <div align="center">
-            <h3 style="color: black;">ARST HTML HeadQuarter<br>Main Menu</h3>
-            <div>
-                <a href="index.html" style="text-decoration: none; color:black;">&emsp;Main Menu</a>
-                <a href="simplethree/three.html" style="text-decoration: none; color:black;">&emsp;Simple ThreeJS</a>
-            </div>
-            <div style="color: black;">
-                <br><br>
-                this website was unnessarily-
-                <h1>Made in 2021 and Updating Forever</h1>
-                <p>
-                    Ini webpage sebenernya cuma buat nampilin tugas three.js doang<br>
-                    biar dah, kali aja ntar bisa nambah macem-macem hehe.<br>
-                </p>
-            </div>
+  <body style="background-color: black">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">arstcreations</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="statix.html" target="_blank">STATIX!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown link </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#" target="_blank">Action</a></li>
+                <li><a class="dropdown-item" href="#" target="_blank">Another action</a></li>
+                <li><a class="dropdown-item" href="#" target="_blank">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    </body>
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- parallax -->
+    <section class="parallax" style="z-index: -1; background-image: url('res/banner.png'); height: 300px">
+      <div class="text-end text-light google-roboto"><h1 style="padding-right: 10%; padding-top: 5%">ARSTCreations</h1></div>
+      <div id="scene">
+        <div data-depth="0.95"><img src="res/cat.png" /></div>
+        <div data-depth="1.00"><img src="res/boo.png" /></div>
+      </div>
+    </section>
+    <!-- /parallax -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron p-5 bg-dark text-light">
+      <div class="text-center">
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <img src="https://github.com/arstcreations.png" alt="arstcreations profile-pic" class="rounded-circle justify-content-center" style="padding-bottom: 1rem; width: 250px" />
+          <h1 class="display-4">Rizaldy Aristyo</h1>
+          <p class="lead">Student | Creative | All Rounder</p>
+        </div>
+        <div>
+          <p class="lr-pad-20 fs-5" style="padding-top: 1rem" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="3000">
+            <a id="age"></a> years old Competent Informatics Engineering student with broad knowledge of programming. Teaching basics of programming to everyone for free in hope to normalize programming concepts to the society in the near
+            future. Seeking an internship to expand my experience forevermore.
+          </p>
+        </div>
+      </div>
+      <div class="container" style="padding-top: 10rem">
+        <h1 data-aos="fade-down" data-aos-duration="3000">Skills</h1>
+        <div class="row bg-dark">
+          <!-- Col 1 -->
+          <div class="col">
+            <div class="p-3 bg-dark">
+              <p style="margin-bottom: 10px" data-aos="fade-right" data-aos-duration="2000">
+                Started programming <a id="programmingExp"></a> years ago by learning C fundamentals, I am now utilizing a lot of different mainstream programming languages including HTML, CSS, JS, PHP, Java, Python3, Flutter, and even
+                Bash. Not only in programming, I excel at image processing softwares like Adobe Photoshop, Krita, etc. Video Editting is not a problem too, for i have experiences in using Filmora X and Kdenlive
+              </p>
+              <div class="p-3 bg-dark" style="margin-top: -3px" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col fs-5 pb-2">Image Processing & Design</div>
+                <div class="progress" style="height: 15px">
+                  <div class="progress-bar" role="progressbar" style="width: 90%; background-image: linear-gradient(to right, violet, orange, red, darkred, maroon, indigo)" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+              </div>
+              <div class="p-3 bg-dark" data-aos="fade-right" data-aos-duration="800">
+                <div class="col fs-5 pb-2">Video Editing</div>
+                <div class="progress" style="height: 15px">
+                  <div class="progress-bar" role="progressbar" style="width: 55%; background-image: linear-gradient(to right, violet, orange, red)" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                </div>
+              </div>
+              <!-- Progress Bar -->
+              <div data-aos="fade-right" data-aos-duration="700">
+                <div class="p-3 bg-dark">
+                  <div style="float: right">
+                    <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/c/c.svg" alt="bash-logo" width="40px" />
+                    <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/cpp/cpp.svg" alt="bash-logo" width="40px" />
+                  </div>
+                  <div class="col fs-5 pt-2">C | C++</div>
+                </div>
+                <div class="progress" style="margin-left: 15px; height: 15px; width: 95%">
+                  <div class="progress-bar" role="progressbar" style="width: 60%; background-image: linear-gradient(to right, violet, orange, red)" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+              </div>
+              <!-- /Progress Bar -->
+            </div>
+          </div>
+          <!-- /Col 1 -->
+
+          <!-- Col 2 -->
+          <div class="col" style="margin-right: 50px; margin-left: 30px">
+            <!-- Progress Bar -->
+            <div data-aos="fade-left" data-aos-duration="1000">
+              <div class="p-3 bg-dark">
+                <div style="float: right">
+                  <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/java/java.svg" alt="java-logo" width="30px" />
+                  <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/csharp/csharp.svg" alt="java-logo" width="40px" />
+                </div>
+                <div class="col fs-5 pt-2">Java | C#</div>
+              </div>
+              <div class="progress" style="height: 15px">
+                <div class="progress-bar" role="progressbar" style="width: 80%; background-image: linear-gradient(to right, violet, orange, red, darkred, maroon)" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <!-- /Progress Bar -->
+            <!-- Progress Bar -->
+            <div data-aos="fade-left" data-aos-duration="900">
+              <div class="p-3 bg-dark">
+                <div style="float: right">
+                  <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.svg" alt="py-logo" width="40px" />
+                </div>
+                <div class="col fs-5 pt-2">Python3</div>
+              </div>
+              <div class="progress" style="height: 15px">
+                <div class="progress-bar" role="progressbar" style="width: 70%; background-image: linear-gradient(to right, violet, orange, red, darkred)" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <!-- /Progress Bar -->
+            <!-- Progress Bar -->
+            <div data-aos="fade-left" data-aos-duration="800">
+              <div class="p-3 bg-dark">
+                <div style="float: right">
+                  <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/html/html.svg" alt="bash-logo" width="35px" />
+                  <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/css/css.svg" alt="bash-logo" width="40px" />
+                  <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/javascript/javascript.svg" alt="bash-logo" width="40px" />
+                </div>
+                <div class="col fs-5 pt-2">HTML | CSS | JS</div>
+              </div>
+              <div class="progress" style="height: 15px">
+                <div class="progress-bar" role="progressbar" style="width: 76%; background-image: linear-gradient(to right, violet, orange, red, darkred)" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">76%</div>
+              </div>
+            </div>
+            <!-- /Progress Bar -->
+            <!-- Progress Bar -->
+            <div data-aos="fade-left" data-aos-duration="700">
+              <div class="p-3 bg-dark">
+                <div style="float: right">
+                  <img src="https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/SVG/16x16.svg" alt="bash-logo" width="40px" />
+                </div>
+                <div class="col fs-5 pt-2">Bash</div>
+              </div>
+              <div class="progress" style="height: 15px">
+                <div class="progress-bar" role="progressbar" style="width: 60%; background-image: linear-gradient(to right, violet, orange, red)" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+              </div>
+            </div>
+            <!-- /Progress Bar -->
+            <!-- Progress Bar -->
+            <div data-aos="fade-left" data-aos-duration="600">
+              <div class="p-3 bg-dark">
+                <div style="float: right">
+                  <!img src="" alt="logo" width="40px" style="margin-top: 16px;"/>
+                </div>
+                <div class="col fs-5 pt-4">Other (Learning in Progress)</div>
+              </div>
+              <div class="progress" style="height: 15px">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!-- /Progress Bar -->
+          </div>
+          <!-- /Col 2 -->
+
+          <!-- Logos -->
+          <h4 style="margin-top: 5%">Engines and Frameworks Experienced At</h4>
+          <div style="margin-left: 10px; margin-top: 5px; float: right">
+            <!-- BootStrap5 logo paths -->
+            <div data-aos="zoom-in" class="logos" data-aos-duration="900">
+              <svg xmlns="http://www.w3.org/2000/svg" class="enginesnframeworks" width="40" height="32" viewBox="0 0 118 94" role="img">
+                <title>Bootstrap</title>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <!-- /BootStrap5 logo paths -->
+
+            <!-- ParticlesJS logo -->
+            <div data-aos="zoom-in" class="logos" data-aos-duration="1000" data-aos-delay="500">
+              <t class="fs-4 enginesnframeworks">particles.js</t>
+            </div>
+            <!-- /ParticlesJS logo -->
+
+            <!-- ParallaxJS logo -->
+            <div data-aos="zoom-in" class="logos" data-aos-duration="1100" data-aos-delay="1000">
+              <img src="https://raw.githubusercontent.com/wagerfield/parallax/master/logo.png" alt="parallax-logo" width="150px" />
+            </div>
+            <!-- /ParallaxJS logo -->
+
+            <!-- AOS Logo -->
+            <h1 class="logos" style="font-family: 'Times New Roman', Times, serif; font-size: x-large" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1500">AOS</h1>
+            <!-- /AOS Logo -->
+
+            <!-- Unity logo paths -->
+            <div data-aos="zoom-in" class="logos" data-aos-duration="1200" data-aos-delay="2000">
+              <svg id="logo_svg__Logo" class="enginesnframeworks" xmlns="http://www.w3.org/2000/svg" height="32" x="0" y="0" viewBox="0 0 130.5 48" xml:space="preserve">
+                <style>
+                  .logo_svg__st0 {
+                    fill: #fff;
+                  }
+                  .logo_svg__st1 {
+                    fill: #ccc;
+                  }
+                </style>
+                <path
+                  class="logo_svg__st0"
+                  d="M53.7 26.1V12.5h5.7v13.8c0 2.3 1.2 3.8 4 3.8 2.6 0 3.9-1.6 3.9-3.9V12.5H73v13.6c0 5.3-3.2 8.5-9.6 8.5-6.5.1-9.7-3.1-9.7-8.5zm21.9-8.4h5.1V20h.1c1.2-1.8 2.8-2.7 5.1-2.7 3.6 0 5.7 2.6 5.7 6.3v10.7h-5.3v-9.7c0-1.7-.9-2.9-2.6-2.9-1.7 0-2.9 1.5-2.9 3.5v9.1h-5.3V17.7zm18.7-6.5h5.3v4.3h-5.3v-4.3zm0 6.5h5.3v16.5h-5.3V17.7zm9.4 12.2V22h-2.2v-4.3h2.2v-5.2h5.1v5.2h3V22h-3v6.8c0 1.3.7 1.6 1.8 1.6h1.2v3.8c-.5.1-1.5.3-2.9.3-3 0-5.2-1-5.2-4.6zm11.4 5.7h1.8c1.5 0 2.2-.6 2.2-1.7 0-.7-.3-1.7-1-3.4l-4.9-12.7h5.5l2.2 7c.5 1.6 1 3.8 1 3.8h.1s.5-2.2 1-3.8l2.2-7h5.3l-5.7 16.7c-1.3 3.9-2.9 5.2-6.2 5.2h-3.4l-.1-4.1z"
+                ></path>
+                <path
+                  class="logo_svg__st1"
+                  d="M42.5 33.6V11.2L23.1 0v8.6l7.6 4.4c.3.2.3.6 0 .7l-9 5.2c-.3.2-.6.1-.8 0l-9-5.2c-.3-.1-.3-.6 0-.7l7.6-4.4V0L0 11.2v22.4-.1.1l7.4-4.3v-8.8c0-.3.4-.5.6-.4l9 5.2c.3.2.4.4.4.7v10.4c0 .3-.4.5-.6.4l-7.6-4.4-7.4 4.3L21.2 48l19.4-11.2-7.4-4.3-7.6 4.4c-.3.2-.6 0-.6-.4V26.1c0-.3.2-.6.4-.7l9-5.2c.3-.2.6 0 .6.4v8.8l7.5 4.2z"
+                ></path>
+                <path d="M21.2 48l19.4-11.2-7.4-4.3-7.6 4.4c-.3.2-.6 0-.6-.4V26.1c0-.3.2-.6.4-.7l9-5.2c.3-.2.6 0 .6.4v8.8l7.4 4.3V11.2L21.2 23.5V48z" fill="#a6a6a6"></path>
+                <path class="logo_svg__st0" d="M23.1 0v8.6l7.6 4.4c.3.2.3.6 0 .7l-9 5.2c-.3.2-.6.1-.8 0l-9-5.2c-.3-.1-.3-.6 0-.7l7.6-4.4V0L0 11.2l21.2 12.3 21.2-12.3L23.1 0z"></path>
+                <path class="logo_svg__st1" d="M16.9 36.9l-7.6-4.4-7.4 4.3L21.3 48V23.5L0 11.2v22.4-.1.1l7.4-4.3v-8.8c0-.3.4-.5.6-.4l9 5.2c.3.2.4.4.4.7v10.4c.1.4-.2.7-.5.5z"></path>
+              </svg>
+            </div>
+            <!-- /Unity logo paths -->
+
+            <!-- Renpy logo -->
+            <div data-aos="zoom-in" class="logos" data-aos-duration="1300" data-aos-delay="2500">
+              <img src="https://www.renpy.org/static/index-logo.png" alt="renpy-logo" class="enginesnframeworks" width="35px" />
+            </div>
+            <!-- /Renpy logo -->
+          </div>
+
+          <!--About "Human" Language -->
+          <div class="pt-5">
+            <h3 style="margin-top: 1rem; margin-bottom: 1rem" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">About "Human" Language</h3>
+            <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+              Native speaker of (but not limited to) Bahasa Indonesia. I am fluent in English and.., if i may add, in my regional language- Javanese.
+              <br />I see myself speaks English fluently with foreigners and can transliterate one another in the near future.
+            </p>
+          </div>
+          <!-- /About "Human" Language -->
+
+          <!-- exp -->
+          <div class="pt-5">
+            <h1 style="margin-top: 1rem; margin-bottom: 1rem" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Experiences</h1>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+              <div class="card text-white bg-secondary mb-3" style="max-width: 18rem">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Secondary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /exp -->
+        </div>
+      </div>
+    </div>
+    <!-- /Jumbotron -->
+    <!-- Well, it's called "Jumbo" for an obvious reason i guess -->
+
+    <!-- Cards -->
+    <section class="bg-dark">
+      <h3 class="text-center text-light" data-aos="fade-up" data-aos-duration="1000" style="margin-top: 20rem; margin-bottom: 8rem">Featured <strike style="color: gray"> Works</strike> Creations</h3>
+      <div class="container">
+        <!-- row 1-1 -->
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-3">
+            <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
+              <img src="res/hasilKuliahThumb.png" class="card-img-top" alt="code-img" />
+              <div class="card-body">
+                <h5 class="card-title">HasilKuliah</h5>
+                <p class="card-text">All of my college tasks pushed to GitHub.</p>
+                <a href="https://github.com/ARSTCreations/hasilkuliah" class="btn btn-primary">Repo</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 1-2 -->
+          <div class="col-3">
+            <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
+              <img src="https://repository-images.githubusercontent.com/405610144/2c0391ff-e16c-4e99-a166-88f445a952d7" class="card-img-top" alt="archautodeploy" />
+              <div class="card-body">
+                <h5 class="card-title">Arch Auto Deploy</h5>
+                <p class="card-text">Script that installs Arch Linux automatically, fully editable and configurable</p>
+                <a href="https://github.com/ARSTCreations/archautodeploy" class="btn btn-primary">Source</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 1-4 -->
+          <div class="col-3">
+            <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
+              <img src="res/threeThumb.png" class="card-img-top" alt="threeJSThumb" />
+              <div class="card-body">
+                <h5 class="card-title">Simple ThreeJS Example</h5>
+                <p class="card-text">Example on using ThreeJS via CDN in HTML.</p>
+                <a href="simplethree/three.html" class="btn btn-primary">Visit Page</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 1-3 -->
+          <div class="col-3">
+            <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
+              <iframe height="255" src="https://console.dialogflow.com/api-client/demo/embedded/be231681-00b9-4549-b2fd-4db254bec38f"></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Arisha</h5>
+                <text>Machine Learning Powered by Dialogflow (WIP, Try it out!)</text>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /row 1 -->
+
+        <!-- row 2 -->
+        <div class="row">
+          <!-- Card 2-1 -->
+          <div class="col-3">
+            <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
+              <img src="res/comingSoon.png" class="card-img-top" alt="archautodeploy" />
+              <div class="card-body">
+                <h5 class="card-title">Arch Auto Deploy</h5>
+                <p class="card-text">Script that installs Arch Linux automatically, fully editable and configurable</p>
+                <a href="https://github.com/ARSTCreations/archautodeploy" class="btn btn-primary">Source</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2-2 -->
+          <div class="col-3">
+            <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
+              <img src="res/kuliahInformatikaThumb.png" class="card-img-top" alt="code-img" />
+              <div class="card-body">
+                <h5 class="card-title">KuliahInformatika</h5>
+                <p class="card-text">Knowledge is for everyone!. I made my own study resource in Bahasa Indonesia to be accessed by anyone for free!</p>
+                <a href="https://github.com/ARSTCreations/kuliahinformatika" class="btn btn-primary">Currently in Bahasa Indonesia</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /row 2 -->
+      </div>
+    </section>
+    <!-- /Cards -->
+
+    <!-- particles.js container -->
+    <div id="particles-js" style="height: 400px">
+      <div style="position: absolute; color: aliceblue; margin-top: 80px; margin-left: 70px">
+        <h1 style="margin-bottom: 15px">Connect With Me</h1>
+        <div class="h2 social-media">
+          <i class="fab fa-instagram" style="width: 40px; height: 40px"></i>
+          <a class="social-media-text" href="https://www.instagram.com/arstcreations/" target="_blank">@arstcreations</a>
+        </div>
+        <div class="h2 social-media">
+          <i class="fab fa-github" style="width: 40px; height: 40px"></i>
+          <a class="social-media-text" href="https://github.com/ARSTCreations" style="margin-left: 10px">ARSTCreations</a>
+        </div>
+        <div class="h2 social-media">
+          <i class="fab fa-reddit" style="width: 40px; height: 40px"></i>
+          <a class="social-media-text" href="https://www.reddit.com/user/arstashura" style="margin-left: 10px">arstashura</a>
+        </div>
+      </div>
+    </div>
+    <!-- /particles.js container -->
+  </body>
+
+  <!-- end-scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+  <script src="app.js"></script>
+  <script>
+    AOS.init();
+    programmingExp = Math.abs(new Date(Date.now()).getUTCFullYear() - 2019);
+    age = Math.abs(new Date(Date.now()).getUTCFullYear() - 2002);
+    document.getElementById("programmingExp").innerHTML = programmingExp;
+    document.getElementById("age").innerHTML = age;
+    var scene = document.getElementById("scene");
+    var parallax = new Parallax(scene);
+  </script>
+  <!-- /end-scripts -->
 </html>

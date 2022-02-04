@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <title>arstSTATIX!</title>
+  </head>
+
+  <body style="background-color: black" class="google-roboto">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">arstcreations</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">STATIX!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown link </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#" target="_blank">Action</a></li>
+                <li><a class="dropdown-item" href="#" target="_blank">Another action</a></li>
+                <li><a class="dropdown-item" href="#" target="_blank">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- parallax -->
+    <section class="parallax" style="z-index: -1; background-image: url('res/banner.png'); height: 300px">
+      <div class="text-end text-light google-roboto"><h1 style="padding-right: 10%; padding-top: 5%">ARSTCreations</h1></div>
+      <div id="scene">
+        <div data-depth="0.95"><img src="res/cat.png" /></div>
+        <div data-depth="1.00"><img src="res/boo.png" /></div>
+      </div>
+    </section>
+    <!-- /parallax -->
+
+    <section class="p-5 text-center bg-dark text-light">
+      <h1 class="py-5">Staticism</h1>
+      <p class="text-wrap lr-pad-30">
+        The princple and art to not move from the plane of current state for all of the eternity To be stuck in the moment, to not remember any, always fresh and Staticism Being in static made one in the state of "Statix", engulfed in it's
+        own presumable godly abillity, not remembering what it have encountered before thus not evolving and self proclaiming its omnipotential To only being remembered but always forgetting, frozen and living in the moment, over and over.
+      </p>
+    </section>
+
+    <!-- end-scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script src="app.js"></script>
+    <script>
+      AOS.init();
+      var scene = document.getElementById("scene");
+      var parallax = new Parallax(scene);
+    </script>
+    <!-- /end-scripts -->
+  </body>
+</html>
