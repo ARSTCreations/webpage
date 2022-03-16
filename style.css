@@ -40,7 +40,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000;
-  background-image: url("res/banner.png");
+  background-image: url("res/banner.webp");
 }
 .google-roboto {
   font-family: Roboto, sans-serif;
