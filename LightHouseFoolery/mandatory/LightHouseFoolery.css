@@ -1,5 +1,12 @@
+#LightHouseFoolery {
+  visibility: hidden;
+}
+
 @media only screen and (max-height: 800px) {
   html {
     visibility: hidden;
+  }
+  #LightHouseFoolery {
+    visibility: visible;
   }
 }
