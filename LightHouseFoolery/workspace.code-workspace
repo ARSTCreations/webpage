@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../CROSSACCESS/Kuliah/KuliahFULL/SMT 4/Mobile"
+	}
+],
+  "settings": {
+    "livePreview.defaultPreviewPath": "/index.html"
+  }
+}

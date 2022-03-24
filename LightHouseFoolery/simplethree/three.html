@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset-UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+    <title>ARSTCreation SimpleThreeJS</title>
+  </head>
+
+  <body style="background-color: black; color: white">
+    <!Header>
+    <div align="center">
+      <p>
+        Simple Cube Texturing and Animation in threeJS<br />
+        for Basic Computer Graphics subject assignment<br />
+        by 202010370311440 in 2021
+      </p>
+      Visit my Main Page <a href="https://arstcreations.github.io" style="color: white">here</a>!<br />
+      here's the <a href="https://github.com/ARSTCreations/webpage/tree/main/simplethree" style="color: lightskyblue">Source Code</a> <br /><br />
+    </div>
+
+    <!Buttons>
+    <div align="center">
+      <!Position Translate>
+      <button onclick="cube.position.x -= moveamount">Move Left</button>
+      <button onclick="cube.position.y += moveamount">Move Up</button>
+      <button onclick="cube.position.y -= moveamount">Move Down</button>
+      <button onclick="cube.position.x += moveamount">Move Right</button>
+      <button
+        onclick="
+        cube.position.x = 0
+        cube.position.y = 0
+      "
+      >
+        Reset x,y Position
+      </button>
+      <br /><br />
+
+      <!Animation Speed>
+      <button onclick="rotamount=rotamount-0.01;">"- Rotation speed"</button>
+      <button onclick="rotamount=rotamount+0.01;">"+ Rotation speed"</button>
+      <button onclick="rotamount=rotamount=0;">Stop Rotation</button>
+      <br /><br />
+
+      <!Respawn With Texture>
+      <button
+        onclick="
+        material = new THREE.MeshBasicMaterial( { color: hexColor, map:texture} );
+        cube = new THREE.Mesh( geometry, material );
+        scene.remove(scene.children[0]);
+        scene.add(cube);
+      "
+      >
+        Turn On Texture
+      </button>
+
+      <!Respawn Without Texture>
+      <button
+        onclick="
+        material = new THREE.MeshBasicMaterial( { color: hexColor} );
+        cube = new THREE.Mesh( geometry, material );
+        scene.remove(scene.children[0]);
+        scene.add(cube);
+      "
+      >
+        Turn Off Texture
+      </button>
+
+      <label> Colour: </label>
+      <input type="text" placeholder="blue, red, green, cyan, magenta..." id="input" />
+
+      <!Respawn With Color Change>
+      <button
+        onclick="
+        hexColor = document.getElementById('input').value;
+        material = new THREE.MeshBasicMaterial( { color: hexColor} );
+        cube = new THREE.Mesh( geometry, material );
+        scene.remove(scene.children[0]);
+        scene.add(cube);
+      "
+      >
+        Change Color
+      </button>
+
+      <br /><br />
+    </div>
+
+    <script>
+      //Clear TextField
+      document.getElementById("input").value = "";
+
+      //Values
+      var moveamount = 0.5;
+      var rotamount = 0;
+      var hexColor = 0xffffff;
+
+      //Camera
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      var renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+      camera.position.z = 5;
+
+      //Geometry
+      var geometry = new THREE.BoxGeometry(1, 1, 1);
+
+      //Texture
+      var texture = new THREE.TextureLoader().load("https://raw.githubusercontent.com/ARSTCreations/webpage/main/simplethree/grass.jpg");
+      var material = new THREE.MeshBasicMaterial({ color: hexColor, map: texture });
+
+      //Cube
+      var cube = new THREE.Mesh(geometry, material);
+      scene.add(cube);
+
+      //Animation
+      function animate() {
+        cube.rotation.x += rotamount;
+        cube.rotation.y += rotamount;
+        cube.rotation.z -= rotamount;
+        renderer.render(scene, camera);
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    </script>
+  </body>
+</html>
