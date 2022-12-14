@@ -1,0 +1,133 @@
+<script>if(document.URL.indexOf("main.html") >= 0)document.location.href="/";</script>
+<style>
+    .fixed{
+        position: fixed;
+        right: 12px;
+        margin: 10px;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #1a1a1a;
+    }
+    .fixed:hover{
+        background-color: #1a1a1a;
+        border: 1px solid #1a1a1a;
+    }
+    .button1:hover{
+        box-shadow: 0 0 10px yellow;
+    }
+    .button1{
+        bottom: 12px;
+        border: 1px solid yellow;
+    }
+    .button2:hover{
+        box-shadow: 0 0 10px white;
+    }
+    .button2{
+        bottom: 58px;
+        border: 1px solid white;
+    }
+</style>
+<div>
+    <div class="fixed button1" id="play-audio" onclick="toggle_music()"></div>
+    <div class="fixed button2" id="scroll-to-top" onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;"></div>
+    <style>
+        h1 {
+            font-size: 70px;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+        h2{font-size: 30px;font-weight: bold;}
+        .cutout a{color: rgba(0, 0, 0, 1);text-decoration: none;}
+        .cutout a:hover{text-decoration: underline;}
+        table {border-collapse: collapse;}
+        tr, td {font-size: 18px;}
+        p {font-size: 20px;margin-right: 50px;}
+        .cutoutImg{
+            background-image: url('/images/header_unsplash.webp');
+            width: 100%;
+            height: 93vh;
+            margin-left:0px;
+        }
+    </style>
+    <section style="margin-top: 2rem; overflow-x:hidden">
+        <div class="cutoutImg" data-aos="fade-in" data-aos-duration="1000">
+            <h1 class="cutout" data-aos="fade-in" data-aos-duration="1000"><a target="_blank" rel="noopener noreferrer" href="https://github.com/ARSTCreations/">Rizaldy Aristyo</a></h1>
+            <div data-aos="fade-in" data-aos-duration="3000">
+                <p>
+                    My name is Rizaldy and I am a Junior Devops Engineer and a Cyber Security Enthusiast.<br>
+                    I'm also the leader of Three Stacking Bird RNDProd., a non-profit organization that<br>
+                    focuses on Research, Development, and Production in any sector of technology and information.<br>
+            
+                    <br>I don't have any tech stack in particular,<br>anything works when you just patch things up
+                    and then tidy it in the end.<br>(half joking lol but fr)
+                </p>
+            </div>
+            <div style="position:absolute;right: 60px;bottom:30px" data-aos="fade-in">
+                Love the winter scenery?<br>
+                It was <a style="text-decoration: none; color:yellow" target="_blank" rel="noopener noreferrer" href="https://unsplash.com/@samuel_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel's</a>, great isn't it?
+            </div>
+        </div>
+    </section>
+    <section class="alignCenter2" style="font-family: 'La Belle Aurore', cursive; margin-top:1rem;margin-left:5ch">
+        <h2 style="text-decoration-line:underline;margin-right:2ch">Weaknesses</h2>
+        <p style="margin-top: -20px">
+            Instead of the ordinary "My Skills" or "My Tech Stack" section,<br>
+            Let's try to put my weaknesses here, so then i can reflect on it and improve myself.<br>
+            But of course, I'm typing it in cursive so it's harder for other to read, haha.<br>
+        </p>
+        <div>
+            <table style="text-align: left; width:fit-content; margin-left:auto; margin-right:auto;">
+                <tr>
+                    <td>1.</td>
+                    <td>Golden Object Syndrome</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Color Blindness</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Lazy (the main problem)</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Lacking self confidence</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Hard to talk to</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Difficult First Impression</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="alignCenter2" style="font-family: 'La Belle Aurore', cursive; margin-top:1rem;margin-left:5ch">
+        <h2 style="text-decoration-line:underline;margin-right:2ch">Strengths</h2>
+        <p style="margin-top: -5px">
+            Now that You've heard about my weaknesses, let's talk about my strength.<br>
+            though it is subjective, I really have a good reason on why do<br>
+            I claim myself to be good at this particular task or sector<br>
+            ...<br>
+            ....Okay let's forget it. I don't have anything to show off afterall.<br>
+            <br>My strength comes from the surrounding, if the environment is weak then I'm weakened
+        </p>
+    </section>
+    <section class="alignCenter2" style="font-family: 'La Belle Aurore', cursive; margin-top:1rem;margin-left:5ch">
+        <h2 style="text-decoration-line:underline;margin-right:2ch">Home</h2>
+        <p style="margin-top: -20px">
+            This picture below is the map to our home<br>
+            If we ever lost so far away someday,<br>
+            we will always find the way back home, anytime. 
+        </p>
+        <img src="/images/pulsar_map.webp" alt="pulsar_map" style="width:374px">
+    </section>
+    <section class="alignCenter2" style="margin-top: 15rem; margin-bottom:1rem; color:gray">
+        it's always nice to scroll to the end of the page, isn't it?
+    </section>
+    <script>AOS.init();</script>
+</div>

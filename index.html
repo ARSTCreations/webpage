@@ -1,522 +1,89 @@
 <!DOCTYPE html>
-<html lang="en" id="snapscroll-on">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="title" content="arstcreations" />
-    <meta name="description" content="arstcreations' GitHub Page" />
-    <meta name="keywords" content="arstcreations, rizaldy, aristyo, cv, web cv" />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
-    <meta name="revisit-after" content="10 days" />
-    <meta name="author" content="Rizaldy Aristyo" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <title>arstSTATIX!</title>
-    <!-- GFonts, Bootstrap, AOS, ParallaxJS CDNs, Preconnects, and Preloads -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="preload" as="style" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="preload" as="style" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="preload" as="style" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.min.css" as="style" />
-    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <!-- /GFonts, Bootstrap, AOS, ParallaxJS CDNs, Preconnects, and Preloads -->
-  </head>
+<html lang="en" style="font-family: 'Quicksand', sans-serif; color: white">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/ARSTCreations/domumcss/main/domum.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Quicksand:wght@300&display=swap'); </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
 
-  <!-- navbar -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
-  <script src="lazynav.min.js"></script>
-  <nav id="snaphere" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">arstcreations</a>
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="lazynav" href="pages/mainpage.html">Portofolio&nbsp;</a>
-          <a class="lazynav" href="pages/animus.html">animus&nbsp;</a>
-          <a class="lazynav" href="pages/else.html">Else&nbsp;</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- /navbar -->
-  <!-- parallax -->
-  <section class="parallax" style="z-index: -2; background-image: url('res/banner.webp'); height: 300px">
-    <div class="text-end text-light google-roboto"><h1 style="padding-right: 10%; padding-top: 5%">ARSTCreations</h1></div>
-    <div id="scene">
-      <div data-depth="0.95"><img src="res/cat.png" alt="parallaxCat" style="width: 1080px; height: 1389px" /></div></div>
-      <div data-depth="1.00"><img src="res/boo.png" alt="parallaxBoo" style="width: 1080px; height: 1389px" /></div>
-    </div>
-  </section>
-  <!-- /parallax -->
-
-  <body style="background-color: black">
-    <!-- content -->
-    <div id="content">
-      <!-- Jumbotron -->
-      <div class="jumbotron p-5 bg-dark text-light">
-        <div class="text-center">
-          <div data-aos="fade-up" data-aos-duration="3000">
-            <img src="https://github.com/arstcreations.png" alt="arstcreations profile-pic" class="rounded-circle justify-content-center" style="margin-bottom: -150px; transform: translateY(-170px)" width="250px"/>
-            <h1 class="display-4">Rizaldy Aristyo</h1>
-            <p class="lead">Student | Creative | All Rounder</p>
-          </div>
-          <div>
-            <p class="lr-pad-20 fs-5" style="padding-top: 1rem" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="3000">
-              <ab id="age"></ab> years old Competent Informatics Engineering student with broad knowledge of programming. Teaching basics of programming to everyone for free in hope to normalize programming concepts to the society in the near
-              future. Seeking an internship to expand my experience forevermore.
-            </p>
-          </div>
-        </div>
-        <div class="container" style="padding-top: 20rem">
-          <h1 id="snaphere" class="text-center" data-aos="fade" data-aos-duration="3000">Skill-'o-Meter</h1>
-          <h2 style="margin-top: 2rem" data-aos="fade-right" data-aos-duration="3000">→ Programming</h2>
-          <div class="row">
-            <!-- Col 1 -->
-            <div class="col">
-              <div class="p-3 bg-dark">
-                <p style="margin-bottom: 10px" data-aos="fade-right" data-aos-duration="2000">
-                  Started programming <ab id="programmingExp"></ab> years ago by learning C fundamentals, I am now utilizing a lot of different mainstream programming languages including HTML, CSS, JS, PHP, Java, Python3, Flutter, and even
-                  Bash.
-                </p>
-
-                <!-- Progress Bar -->
-                <div data-aos="fade-right" data-aos-duration="700">
-                  <div class="p-3 bg-dark">
-                    <div style="float: right">
-                      <img loading="lazy" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/c/c.svg" alt="c-logo" width="40px" height="40px" />
-                      <img loading="lazy" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/cpp/cpp.svg" alt="cpp-logo" width="40px" height="40px" />
-                    </div>
-                    <div class="col fs-5 pt-2">C | C++</div>
-                  </div>
-                  <div class="progress" style="height: 15px">
-                    <div class="progress-bar" role="progressbar" aria-label="CPP PB" style="width: 60%; background-image: linear-gradient(to right, violet, orange, red)" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                  </div>
-                </div>
-                <!-- /Progress Bar -->
-
-                <!-- Progress Bar -->
-                <div data-aos="fade-right" data-aos-duration="1000">
-                  <div class="p-3 bg-dark">
-                    <div style="float: right">
-                      <img loading="lazy" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/java/java.svg" alt="java-logo" width="30px" />
-                      <img loading="lazy" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/csharp/csharp.svg" alt="java-logo" width="40px" height="40px" />
-                    </div>
-                    <div class="col fs-5 pt-2">Java | C#</div>
-                  </div>
-                  <div class="progress" style="height: 15px">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-label="Java PB"
-                      style="width: 80%; background-image: linear-gradient(to right, violet, orange, red, darkred, maroon)"
-                      aria-valuenow="80"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      80%
-                    </div>
-                  </div>
-                </div>
-                <!-- /Progress Bar -->
-              </div>
+<!--
+    I'm preloading images, i don't care about performance for this light static web
+    It's all about smoothness now :p
+-->
+<style>
+    .preload_images
+    {
+        width: 0px;
+        display: inline;
+        background-image:
+            url('/images/header_unsplash.webp'),
+            url('/images/window.webp'),
+            url('https://github.com/threestackingbirds.png'),
+            url('https://github.com/ARSTCreations.png')
+        ;
+    }
+    .navbar{
+        background-color: #1a1a1a;
+        position: fixed;
+        top: 0;
+        max-width: 100%;
+        z-index: 1;
+    }
+</style>
+    <div class="preload_images"></div>
+    <div class="splashScreen"><h1 style="font-size: 20px;" class="glow60">ARSTCreations</h1></div> 
+    <body>
+        <header>
+            <div class="navbar" id="navBar" style="width: 100%; margin-left: auto; overflow:auto">
+                <a class="menus" href="pages/main.html"><img src="https://github.com/ARSTCreations.png" alt="arstcreations" style="width:50px;height:50px;border-radius: 50%; height:50px; margin-top:0px; padding-bottom: 15px;" /></a>
+                <a class="menus" style="margin-top:14px" href="pages/articles.html">Readables</a>
+                <a class="menus" style="margin-top:14px" href="pages/tsb.html"><i>3SB</i> R&D Prod.</a>
+                <a class="menus" style="margin-top:14px" href="pages/pgp.html">Public PGP</a>
+                <a style="margin-top:14px" href="javascript:document.body.scrollTop = 0;document.documentElement.scrollTop = 0;topnavbar();" style="font-size: 15px" class="icon">&#9776;</a>
             </div>
-            <!-- /Col 1 -->
+        </header>
+        <main><div id="main-content"></div></main>
+        <footer></footer>
+    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.statically.io/gh/ARSTCreations/domumcss/main/domum.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $('#main-content').load('pages/main.html');
+        $(function() {
+            $('header').on('click', '.menus', function(){
+                let urlLink=this.href;
+                $.get(urlLink, function(response, status){
+                    $('#main-content').html(response);
+                });
+                return false; 
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.core.min.js"></script>
+    <script>
+        //audio at /audios/aromatherapy.webm on loop
+        var sound = new Howl({
+            src: ['/audios/nighttime_stroll.webm']
+        });
+        
+        // Clear listener after first call.
+        sound.once('load', function(){
+            sound.loop(true);
+            sound.play();
+        });
 
-            <!-- Col 2 -->
-            <div class="col" style="margin-right: 50px; margin-left: 30px">
-              <!-- Progress Bar -->
-              <div data-aos="fade-left" data-aos-duration="900">
-                <div class="p-3 bg-dark" style="margin-top: 20px">
-                  <div style="float: right">
-                    <img loading="lazy" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.svg" alt="py-logo" width="40px" height="40px" />
-                  </div>
-                  <div class="col fs-5 pt-2">Python3</div>
-                </div>
-                <div class="progress" style="height: 15px">
-                  <div class="progress-bar" role="progressbar" aria-label="Python PB" style="width: 70%; background-image: linear-gradient(to right, violet, orange, red, darkred)" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                    70%
-                  </div>
-                </div>
-              </div>
-              <!-- /Progress Bar -->
-
-              <!-- Progress Bar -->
-              <div data-aos="fade-left" data-aos-duration="800">
-                <div class="p-3 bg-dark">
-                  <div style="float: right">
-                    <img loading="lazy" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/html/html.svg" alt="html-logo" width="35px" />
-                    <img loading="lazy" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/css/css.svg" alt="css-logo" width="40px" height="40px" />
-                    <img loading="lazy" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/javascript/javascript.svg" alt="js-logo" width="40px" height="40px" />
-                  </div>
-                  <div class="col fs-5 pt-2">HTML | CSS | JS</div>
-                </div>
-                <div class="progress" style="height: 15px">
-                  <div class="progress-bar" role="progressbar" aria-label="JS PB" style="width: 76%; background-image: linear-gradient(to right, violet, orange, red, darkred)" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
-                    76%
-                  </div>
-                </div>
-              </div>
-              <!-- /Progress Bar -->
-
-              <!-- Progress Bar -->
-              <div data-aos="fade-left" data-aos-duration="700">
-                <div class="p-3 bg-dark">
-                  <div style="float: right">
-                    <img loading="lazy" src="res/bash.webp" alt="bash-logo" width="40px" height="40px" />
-                  </div>
-                  <div class="col fs-5 pt-2">Bash</div>
-                </div>
-                <div class="progress" style="height: 15px">
-                  <div class="progress-bar" role="progressbar" aria-label="Bash PB" style="width: 60%; background-image: linear-gradient(to right, violet, orange, red)" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                </div>
-              </div>
-              <!-- /Progress Bar -->
-            </div>
-            <!-- /Col 2 -->
-
-            <!-- Learning -->
-            <div class="row">
-              <div class="col">
-                <!-- Logos -->
-                <h3 style="margin-top: 5%; margin-left: 1rem; margin-bottom: 1rem" data-aos="fade-right" data-aos-duration="1000">Engines and Frameworks Experienced At</h3>
-                <div style="margin-left: 10px; margin-top: 5px; float: left">
-                  <!-- BootStrap5 logo paths -->
-                  <div data-aos="zoom-in" class="logos" data-aos-duration="900">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="enginesnframeworks" width="40" height="32" viewBox="0 0 118 94" role="img">
-                      <title>Bootstrap</title>
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                  <!-- /BootStrap5 logo paths -->
-
-                  <!-- ParticlesJS logo -->
-                  <div data-aos="zoom-in" class="logos" data-aos-duration="1000" data-aos-delay="500">
-                    <t class="fs-4 enginesnframeworks">particles.js</t>
-                  </div>
-                  <!-- /ParticlesJS logo -->
-
-                  <!-- ParallaxJS logo -->
-                  <div data-aos="zoom-in" class="logos" data-aos-duration="1100" data-aos-delay="1000">
-                    <img loading="lazy" src="https://raw.githubusercontent.com/wagerfield/parallax/master/logo.png" alt="parallax-logo" width="130px" height="30px" />
-                  </div>
-                  <!-- /ParallaxJS logo -->
-
-                  <!-- AOS Logo -->
-                  <h1 class="logos" style="font-family: 'Times New Roman', Times, serif; font-size: x-large" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1500">AOS</h1>
-                  <!-- /AOS Logo -->
-
-                  <!-- Unity logo paths -->
-                  <div data-aos="zoom-in" class="logos" data-aos-duration="1200" data-aos-delay="2000">
-                    <svg id="logo_svg__Logo" class="enginesnframeworks" xmlns="http://www.w3.org/2000/svg" height="32" x="0" y="0" viewBox="0 0 130.5 48" xml:space="preserve">
-                      <style amp-custom>
-                        .logo_svg__st0 {
-                          fill: #fff;
-                        }
-                        .logo_svg__st1 {
-                          fill: #ccc;
-                        }
-                      </style amp-custom>
-                      <path
-                        class="logo_svg__st0"
-                        d="M53.7 26.1V12.5h5.7v13.8c0 2.3 1.2 3.8 4 3.8 2.6 0 3.9-1.6 3.9-3.9V12.5H73v13.6c0 5.3-3.2 8.5-9.6 8.5-6.5.1-9.7-3.1-9.7-8.5zm21.9-8.4h5.1V20h.1c1.2-1.8 2.8-2.7 5.1-2.7 3.6 0 5.7 2.6 5.7 6.3v10.7h-5.3v-9.7c0-1.7-.9-2.9-2.6-2.9-1.7 0-2.9 1.5-2.9 3.5v9.1h-5.3V17.7zm18.7-6.5h5.3v4.3h-5.3v-4.3zm0 6.5h5.3v16.5h-5.3V17.7zm9.4 12.2V22h-2.2v-4.3h2.2v-5.2h5.1v5.2h3V22h-3v6.8c0 1.3.7 1.6 1.8 1.6h1.2v3.8c-.5.1-1.5.3-2.9.3-3 0-5.2-1-5.2-4.6zm11.4 5.7h1.8c1.5 0 2.2-.6 2.2-1.7 0-.7-.3-1.7-1-3.4l-4.9-12.7h5.5l2.2 7c.5 1.6 1 3.8 1 3.8h.1s.5-2.2 1-3.8l2.2-7h5.3l-5.7 16.7c-1.3 3.9-2.9 5.2-6.2 5.2h-3.4l-.1-4.1z"
-                      ></path>
-                      <path
-                        class="logo_svg__st1"
-                        d="M42.5 33.6V11.2L23.1 0v8.6l7.6 4.4c.3.2.3.6 0 .7l-9 5.2c-.3.2-.6.1-.8 0l-9-5.2c-.3-.1-.3-.6 0-.7l7.6-4.4V0L0 11.2v22.4-.1.1l7.4-4.3v-8.8c0-.3.4-.5.6-.4l9 5.2c.3.2.4.4.4.7v10.4c0 .3-.4.5-.6.4l-7.6-4.4-7.4 4.3L21.2 48l19.4-11.2-7.4-4.3-7.6 4.4c-.3.2-.6 0-.6-.4V26.1c0-.3.2-.6.4-.7l9-5.2c.3-.2.6 0 .6.4v8.8l7.5 4.2z"
-                      ></path>
-                      <path d="M21.2 48l19.4-11.2-7.4-4.3-7.6 4.4c-.3.2-.6 0-.6-.4V26.1c0-.3.2-.6.4-.7l9-5.2c.3-.2.6 0 .6.4v8.8l7.4 4.3V11.2L21.2 23.5V48z" fill="#a6a6a6"></path>
-                      <path class="logo_svg__st0" d="M23.1 0v8.6l7.6 4.4c.3.2.3.6 0 .7l-9 5.2c-.3.2-.6.1-.8 0l-9-5.2c-.3-.1-.3-.6 0-.7l7.6-4.4V0L0 11.2l21.2 12.3 21.2-12.3L23.1 0z"></path>
-                      <path class="logo_svg__st1" d="M16.9 36.9l-7.6-4.4-7.4 4.3L21.3 48V23.5L0 11.2v22.4-.1.1l7.4-4.3v-8.8c0-.3.4-.5.6-.4l9 5.2c.3.2.4.4.4.7v10.4c.1.4-.2.7-.5.5z"></path>
-                    </svg>
-                  </div>
-                  <!-- /Unity logo paths -->
-
-                  <!-- Renpy logo -->
-                  <div data-aos="zoom-in" class="logos" data-aos-duration="1300" data-aos-delay="2500">
-                    <img loading="lazy" src="res/renpy.webp" alt="renpy-logo" class="enginesnframeworks" width="35px" />
-                  </div>
-                  <!-- /Renpy logo -->
-                </div>
-                <!-- /Logos -->
-              </div>
-              <div class="col">
-                <!-- Progress Bar -->
-                <div data-aos="fade-left" data-aos-duration="600">
-                  <div class="p-3 bg-dark">
-                    <div style="float: right">
-                      <!img loading="lazy" src="" alt="logo" width="40px" height="40px" style="margin-top: 16px;"/>
-                    </div>
-                    <div class="col fs-4" style="margin-top: 10px">Other (Learning in Progress)</div>
-                  </div>
-                  <div style="margin-top: -5px; margin-bottom: 10px; margin-left: 3%">Always learning new programming languages.<br />Dart, Rust, and GOLang took my interest for now...</div>
-                  <div class="progress" style="height: 15px; margin-left: 3%; margin-right: 4%">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-label="Other PB" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <!-- /Progress Bar -->
-              </div>
-            </div>
-            <!-- /Learning -->
-
-            <!-- Pentest -->
-            <h2 id="snaphere" style="margin-top: 27rem" data-aos="fade-right" data-aos-duration="3000">→ Penetration Testing</h2>
-            <div class="row p-4">
-              <div style="margin-bottom: 20px" data-aos="fade-right" data-aos-duration="2000">
-                Amateur entry level penetration tester of websites, webapps, databases, panels, servers, and many more.<br />
-                Having so many potentials inside waiting to be discovered, suits me for the junior security analyst intern<br />
-                Though self taught, I'm sure that i can compare with the freelancers <br />
-                <div data-aos="fade-right" data-aos-duration="2000">Thanks to these tools, I grew up:</div>
-                <div class="row" style="margin-top: 1rem">
-                  <img src="res/acunetix.webp" alt="acunetix" style="height: 40px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="1500" />
-                  <img src="res/aircrack.webp" alt="aircrack" style="height: 40px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="1000" />
-                  <img src="res/burp.webp" alt="burp" style="height: 40px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="2500" />
-                  <img src="res/fluxion.webp" alt="fluxion" style="margin-top: 15px; height: 20px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="400" />
-                  <img src="res/hashcat.webp" alt="hashcat" style="margin-top: 15px; height: 20px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="1000" />
-                  <img src="res/httpx.webp" alt="httpx" style="height: 40px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="2000" />
-                </div>
-
-                <div class="row" style="margin-top: 1rem">
-                  <img src="res/xhydra.webp" alt="xhydra" style="height: 40px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="1000" />
-                  <img src="res/jtr.webp" alt="jtr" style="height: 40px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="2000" />
-                  <img src="res/msf.webp" alt="msf" style="height: 40px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="700" />
-                  <img src="res/nessus.webp" alt="nessus" style="margin-top: 10px; height: 20px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="2000" />
-                  <img src="res/nmap.webp" alt="nmap" style="margin-top: 5px; height: 30px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="500" />
-                  <img src="res/nuclei.webp" alt="nuclei" style="margin-top: 5px; height: 30px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="1500" />
-                  <img src="res/tpot.webp" alt="tpot" style="height: 40px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="2500" />
-                  <img src="res/wireshark.webp" alt="wireshark" style="height: 40px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="1000" />
-                  <img src="res/wpscan.webp" alt="wpscan" style="height: 40px; width: auto" data-aos="fade" class="logos" data-aos-duration="1200" data-aos-delay="800" />
-                  <text style="margin-top: 1rem; margin-left: -10px" data-aos="fade-right" class="logos" data-aos-duration="3000" data-aos-delay="2500">&emsp;and many more...</text>
-                </div>
-
-                <div class="row" style="margin-top: 2rem">
-                  <div class="col-6">
-                    <h2 style="margin-top: 2rem">Skills</h2>
-                    <p style="margin-top: 1rem">
-                      - Malware Based Cyber Security Incident Mitigation <br />
-                      - Website Pentesting <br />
-                      - Database Intrusion <br />
-                      - In-Depth Network Scanning <br />
-                      - Password Cracking <br />
-                      - Steganography <br />
-                      - tpotce and MHN Deployment <br />
-                      - Ubuntu/CentOS Server Deployment <br />
-                      - ArchLinux Setup
-                    </p>
-                  </div>
-                  <div class="col-6">
-                    <h2 style="margin-top: 2rem">Experience</h2>
-                    <p style="margin-top: 1rem">
-                      - 1 Year Internship on UMM University's CSIRT Team
-                      <br />- Home and Organization Pi Hole and tpot based HoneyNet Deployment <br />- Linux and Cybersecurity Community Former Staff for 1 Period
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /Pentest -->
-
-            <!-- Editting -->
-            <h2 id="snaphere" style="margin-top: 27rem" data-aos="fade-right" data-aos-duration="3000">→ Creative</h2>
-            <div class="row p-4">
-              <p style="margin-bottom: 10px" data-aos="fade-right" data-aos-duration="2000">
-                Not only in programming, I excel in image processing softwares like Adobe Photoshop, Krita, etc. <br />
-                Light video editting is not a problem too, for i have experiences in using Filmora X and Kdenlive.
-              </p>
-
-              <div class="col">
-                <div class="bg-dark" style="margin-right: 7%" data-aos="fade-right" data-aos-duration="1000">
-                  <div class="col fs-5 pb-2">Image Processing & Design</div>
-                  <div class="progress" style="height: 15px">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-label="Design PB"
-                      style="width: 90%; background-image: linear-gradient(to right, violet, orange, red, darkred, maroon, indigo)"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      90%
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="bg-dark" data-aos="fade-left" data-aos-duration="800">
-                  <div class="col fs-5 pb-2">Video Editing</div>
-                  <div class="progress" style="height: 15px">
-                    <div class="progress-bar" role="progressbar" aria-label="Video PB" style="width: 55%; background-image: linear-gradient(to right, violet, orange, red)" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /Editting -->
-            <!--Communication -->
-            <div class="row">
-              <div class="pt-5 col-6">
-                <h3 style="margin-top: 1rem; margin-bottom: 1rem" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Communication</h3>
-                <p style="margin-top: 2rem" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
-                  Native speaker of (but not limited to) Bahasa Indonesia.<br />
-                  Self proclaimed myself to be fluent in English<br />
-                  and i also ofcourse speaks Javanese (but cannot write the script).<br />
-                  Speaks fluently on public, Active Listener, Throws non- <br />
-                  verbal cues, Responsive, and Friendly among all <br />
-                  The idea is to get the opposing party's attention on a dialog or conference
-                </p>
-              </div>
-              <!-- /Communication -->
-              <div class="pt-5 col-6">
-                <h3 style="margin-top: 1rem; margin-bottom: 1rem" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Funtime Spending</h3>
-                <div style="margin-top: 2rem" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
-                  <p>
-                    Not "Funtime" per se, but it's better to relax a bit than nothing. <br />
-                    Played video games frequently back then, but now I play when I'm free. <br />
-                    Low on time, I feel like playing chess, even though I'm bad at playing it. <br />
-                    Going outdoor is always refreshing rather than seeing the "outdoor" on screen. I'd like to hike always..., (like i had the time)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="snaphere">
-            <!-- Cards -->
-            <h3 class="text-center text-light" data-aos="fade-up" data-aos-duration="2000" style="margin-top: 30rem; margin-bottom: 8rem">Featured <strike style="color: gray"> Works</strike> Creations</h3>
-            <div class="container">
-              <!-- row 1-1 -->
-              <div class="row">
-                <!-- Card 1 -->
-                <div class="col-3" style="margin-top: 15px">
-                  <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
-                    <img loading="lazy" src="res/hasilKuliahThumb.webp" class="card-img-top" alt="code-img" />
-                    <div class="card-body">
-                      <h5 class="card-title">HasilKuliah</h5>
-                      <p class="card-text">All of my college tasks pushed to GitHub.</p>
-                      <a href="https://github.com/ARSTCreations/hasilkuliah" class="btn btn-primary">Repo</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card 1-2 -->
-                <div class="col-3" style="margin-top: 15px">
-                  <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
-                    <img loading="lazy" src="res/aad.webp" class="card-img-top" alt="archautodeploy" />
-                    <div class="card-body">
-                      <h5 class="card-title">Arch Auto Deploy</h5>
-                      <p class="card-text">Script that installs Arch Linux automatically, fully editable and configurable</p>
-                      <a href="https://github.com/ARSTCreations/archautodeploy" class="btn btn-primary">Source</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card 1-4 -->
-                <div class="col-3" style="margin-top: 15px">
-                  <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
-                    <img loading="lazy" src="res/threeThumb.webp" class="card-img-top" alt="threeJSThumb" />
-                    <div class="card-body">
-                      <h5 class="card-title">Simple ThreeJS Example</h5>
-                      <p class="card-text">Example on using ThreeJS via CDN in HTML.</p>
-                      <a href="simplethree/three.html" class="btn btn-primary">Visit Page</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card 1-3 -->
-                <div class="col-3" style="margin-top: 15px">
-                  <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
-                    <iframe title="Dialogflow Console" height="255" src="https://console.dialogflow.com/api-client/demo/embedded/be231681-00b9-4549-b2fd-4db254bec38f"></iframe>
-                    <div class="card-body">
-                      <h5 class="card-title">Arisha</h5>
-                      <text>Machine Learning Powered by Dialogflow (WIP, Try it out!)</text>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /row 1 -->
-
-              <!-- row 2 -->
-              <div class="row">
-                <!-- Card 2-1 -->
-                <div class="col-3" style="margin-top: 15px">
-                  <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
-                    <img loading="lazy" src="res/comingSoon.webp" class="card-img-top" alt="comingsoon" />
-                    <div class="card-body">
-                      <h5 class="card-title">The Archiver</h5>
-                      <p class="card-text">A Visual Novel Project</p>
-                      <a href="https://arstcreations.itch.io/the-archiver" class="btn btn-primary">Coming Soon - Reserved</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card 2-2 -->
-                <div class="col-3" style="margin-top: 15px">
-                  <div class="card bg-dark text-light" data-aos="fade-up" data-aos-duration="2500">
-                    <img loading="lazy" src="res/kuliahInformatikaThumb.webp" class="card-img-top" alt="code-img" />
-                    <div class="card-body">
-                      <h5 class="card-title">KuliahInformatika</h5>
-                      <p class="card-text">Knowledge is for everyone!. I made my own study resource in Bahasa Indonesia to be accessed by anyone for free!</p>
-                      <a href="https://github.com/ARSTCreations/kuliahinformatika" class="btn btn-primary">Currently in Bahasa Indonesia</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /row 2 -->
-            </div>
-            <!-- /Cards -->
-          </div>
-        </div>
-      </div>
-      <!-- /Jumbotron -->
-      <!-- Well, it's called "Jumbo" for an obvious reason i guess -->
-
-      <!-- particles.js container -->
-      <!-- FontAwesome CDN -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-      <div id="snaphere">
-        <div id="particles-js" style="height: 400px">
-          <div style="position: absolute; color: aliceblue; margin-top: 80px; margin-left: 70px">
-            <h1 style="margin-bottom: 15px">Connect With Me</h1>
-            <div class="h2 social-media">
-              <fa class="fa fa-instagram" style="width: 40px; height: 40px; margin-top: 10px"></fa>
-              <a class="social-media-text" href="https://www.instagram.com/arstcreations/" target="_blank">@arstcreations</a>
-            </div>
-            <div class="h2 social-media">
-              <fa class="fa fa-github" style="width: 40px; height: 40px; margin-top: 8px"></fa>
-              <a class="social-media-text" href="https://github.com/ARSTCreations" target="_blank" style="margin-left: 10px">ARSTCreations</a>
-            </div>
-            <div class="h2 social-media">
-              <fa class="fa fa-reddit" style="width: 40px; height: 40px; margin-top: 10px"></fa>
-              <a class="social-media-text" href="https://www.reddit.com/user/arstashura" target="_blank" style="margin-left: 5px">arstashura</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /particles.js container -->
-      <!-- end-scripts -->
-      <link rel="stylesheet" href="style.css" />
-      <!-- ParticlesJS CDN -->
-      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-      <script src="particlessettings.min.js" async></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-      <script async>
-        programmingExp = Math.abs(new Date(Date.now()).getUTCFullYear() - 2019);
-        age = Math.abs(new Date(Date.now()).getUTCFullYear() - 2002);
-        document.getElementById("programmingExp").innerHTML = programmingExp;
-        document.getElementById("age").innerHTML = age;
-        var scene = document.getElementById("scene");
-        var parallax = new Parallax(scene);
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <script>AOS.init();</script>
-      <!-- /end-scripts -->
-    </div>
-    <!-- /Content -->
-  </body>
+        function toggle_music() {
+            if (sound.playing()) {
+                sound.pause();
+            } else {
+                sound.play();
+            }
+        }
+    </script>
 </html>
