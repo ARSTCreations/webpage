@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="en" style="font-family: 'Quicksand', sans-serif; color: white">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.statically.io/gh/ARSTCreations/domumcss/main/domum.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <style> @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Quicksand:wght@300&display=swap'); </style>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Document</title>
-</head>
+    <head>
+        <meta name="title" content="ARSTCreations" />
+        <meta name="description" content="Rizaldy Aristyo's Official Github Page" />
+        <meta name="keywords" content="rizaldy, aristyo, arstcreations, arst, static web, github page, github io" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="15 days" />
+        <meta name="author" content="Rizaldy Aristyo" />
 
-<!--
-    I'm preloading images, i don't care about performance for this light static web
-    It's all about smoothness now :p
--->
-<style>
-    .preload_images
-    {
-        width: 0px;
-        display: inline;
-        background-image:
-            url('/images/header_unsplash.webp'),
-            url('/images/window.webp'),
-            url('https://github.com/threestackingbirds.png'),
-            url('https://github.com/ARSTCreations.png')
-        ;
-    }
-    .navbar{
-        background-color: #1a1a1a;
-        position: fixed;
-        top: 0;
-        max-width: 100%;
-        z-index: 1;
-    }
-</style>
+        <link rel="stylesheet" href="https://cdn.statically.io/gh/ARSTCreations/domumcss/main/domum.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Quicksand:wght@300&display=swap" rel="stylesheet" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Quicksand:wght@300&display=swap");
+        </style>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <title>ARSTCreations</title>
+    </head>
+    <!--
+        Welcome to the source code!
+
+        Just so you know; I'm preloading images,
+        i don't care about performance for this light static web
+        It's all about smoothness now :p
+
+        cheers inspecting elements!
+    -->
+    <style>
+        .preload_images {
+            width: 0px;
+            display: inline;
+            background-image: url("/images/header_unsplash.webp"), url("/images/window.webp"), url("https://github.com/threestackingbirds.png"), url("https://github.com/ARSTCreations.png");
+        }
+        .navbar {
+            background-color: #1a1a1a;
+            position: fixed;
+            top: 0;
+            max-width: 100%;
+            z-index: 1;
+        }
+    </style>
     <div class="preload_images"></div>
-    <div class="splashScreen"><h1 style="font-size: 20px;" class="glow60">ARSTCreations</h1></div> 
+    <div class="splashScreen"><h1 style="font-size: 20px" class="glow60">ARSTCreations</h1></div>
     <body>
         <header>
-            <div class="navbar" id="navBar" style="width: 100%; margin-left: auto; overflow:auto">
-                <a class="menus" href="pages/main.html"><img src="https://github.com/ARSTCreations.png" alt="arstcreations" style="width:50px;height:50px;border-radius: 50%; height:50px; margin-top:0px; padding-bottom: 15px;" /></a>
-                <a class="menus" style="margin-top:14px" href="pages/articles.html">Readables</a>
-                <a class="menus" style="margin-top:14px" href="pages/tsb.html"><i>3SB</i> R&D Prod.</a>
-                <a class="menus" style="margin-top:14px" href="pages/pgp.html">Public PGP</a>
-                <a style="margin-top:14px" href="javascript:document.body.scrollTop = 0;document.documentElement.scrollTop = 0;topnavbar();" style="font-size: 15px" class="icon">&#9776;</a>
+            <div class="navbar" id="navBar" style="width: 100%; margin-left: auto; overflow: auto">
+                <a class="menus" href="pages/main.html"><img src="https://github.com/ARSTCreations.png" alt="arstcreations" style="width: 50px; height: 50px; border-radius: 50%; height: 50px; margin-top: 0px; padding-bottom: 15px" /></a>
+                <a class="menus" style="margin-top: 14px" href="pages/articles.html">Readables</a>
+                <a class="menus" style="margin-top: 14px" href="pages/tsb.html"><i>3SB</i> R&D Prod.</a>
+                <a class="menus" style="margin-top: 14px" href="pages/pgp.html">Public PGP</a>
+                <a style="margin-top: 14px" href="javascript:document.body.scrollTop = 0;document.documentElement.scrollTop = 0;topnavbar();" style="font-size: 15px" class="icon">&#9776;</a>
             </div>
         </header>
         <main><div id="main-content"></div></main>
@@ -54,14 +63,14 @@
     <script src="https://cdn.statically.io/gh/ARSTCreations/domumcss/main/domum.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
-        $('#main-content').load('pages/main.html');
-        $(function() {
-            $('header').on('click', '.menus', function(){
-                let urlLink=this.href;
-                $.get(urlLink, function(response, status){
-                    $('#main-content').html(response);
+        $("#main-content").load("pages/main.html");
+        $(function () {
+            $("header").on("click", ".menus", function () {
+                let urlLink = this.href;
+                $.get(urlLink, function (response, status) {
+                    $("#main-content").html(response);
                 });
-                return false; 
+                return false;
             });
         });
     </script>
@@ -69,11 +78,11 @@
     <script>
         //audio at /audios/aromatherapy.webm on loop
         var sound = new Howl({
-            src: ['/audios/nighttime_stroll.webm']
+            src: ["/audios/nighttime_stroll.webm"],
         });
-        
+
         // Clear listener after first call.
-        sound.once('load', function(){
+        sound.once("load", function () {
             sound.loop(true);
             sound.play();
         });
