@@ -22,13 +22,15 @@
         <title>ARSTCreations</title>
     </head>
     <!--
+
         Welcome to the source code!
 
         Just so you know; I'm preloading images,
         i don't care about performance for this light static web
         It's all about smoothness now :p
 
-        cheers inspecting elements!
+        cheers inspecting elements! (It's okay, its only html,css,js)
+
     -->
     <style>
         .preload_images {
@@ -63,7 +65,14 @@
     <script src="https://cdn.statically.io/gh/ARSTCreations/domumcss/main/domum.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
-        $("#main-content").load("pages/main.html");
+        var hashurl = window.location.hash.substr(1);
+        if (hashurl == "") {
+            $("#main-content").load("pages/main.html");
+            history.pushState(null, "ARSTCreations", "/");
+        } else {
+            $("#main-content").load("pages/" + hashurl + ".html");
+            history.pushState(null, "ARSTCreations", "/" + hashurl);
+        }
         $(function () {
             $("header").on("click", ".menus", function () {
                 let urlLink = this.href;
@@ -76,23 +85,25 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.core.min.js"></script>
     <script>
-        //audio at /audios/aromatherapy.webm on loop
         var sound = new Howl({
             src: ["/audios/nighttime_stroll.webm"],
         });
 
-        // Clear listener after first call.
         sound.once("load", function () {
             sound.loop(true);
             sound.play();
         });
 
         function toggle_music() {
-            if (sound.playing()) {
-                sound.pause();
-            } else {
-                sound.play();
-            }
+            if (sound.playing()) sound.pause();
+            else sound.play();
         }
+
+        console.log(
+            "%c WARNING!!",
+            "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)"
+        );
+        console.log("%c I know this seems so cool but my buddy, this is a browser section intended for developers. Do not paste anything you don't understand, or you might get hacked!.", "font-size: 20px");
+        console.log("%c This is just a static web, I promise you'll waste time searching things that don't even exist here", "font-size: 20px");
     </script>
 </html>

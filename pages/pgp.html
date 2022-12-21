@@ -1,87 +1,96 @@
-<script>if(document.URL.indexOf("pgp.html") >= 0)document.location.href="/";</script>
+<script>
+    if (document.URL.indexOf("/pages/pgp") >= 0) document.location.href = "/#pgp";
+    window.history.pushState(null, null, "/pgp");
+</script>
 <style>
-    a{color: white;text-decoration: none;}
-    a:hover{color: white;text-decoration: underline;}
-    .codeDiv{
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    .codeDiv {
         font-size: 10px;
     }
     @media only screen and (max-width: 600px) {
-        .codeDiv{
+        .codeDiv {
             width: 70vw;
             font-size: 8px;
         }
     }
 </style>
-<div style="margin-top: 6.5rem;margin-right:20px">
-    <section style="margin-left: 20px;">
-        <h2 style="text-align: center;" data-aos="fade-in" data-aos-duration="1000">Ever tried to contact me securely?</h2>
-        <p style="text-align: center;" data-aos="fade-in" data-aos-duration="2000">
-            Via an PGP encrypted E-Mail we can communicate the more secure way<br>
-            this is my public key, use it to encrypt your message and send it to me.<br>
-            The key is also available via the <a href="https://keyserver.ubuntu.com/pks/lookup?op=get&amp;search=0xdb3209676cd1c6e2" style="color: white; text-decoration:none"><i>ubuntu keyserver</i></a>
+<div style="margin-top: 6.5rem; margin-right: 20px">
+    <section style="margin-left: 20px">
+        <h2 style="text-align: center" data-aos="fade-in" data-aos-duration="1000">Ever tried to contact me securely?</h2>
+        <p style="text-align: center" data-aos="fade-in" data-aos-duration="2000">
+            Via an PGP encrypted E-Mail we can communicate the more secure way<br />
+            this is my public key, use it to encrypt your message and send it to me.<br />
+            The key is also available via the <a href="https://keyserver.ubuntu.com/pks/lookup?op=get&amp;search=0xdb3209676cd1c6e2" style="color: white; text-decoration: none"><i>ubuntu keyserver</i></a>
         </p>
         <div data-aos="fade-in" data-aos-duration="3000" data-aos-delay="2000">
-            <div class="codeDiv alignCenter" style="height:100px; overflow-y:scroll">
-                -----BEGIN PGP PUBLIC KEY BLOCK-----<br>
-                <br>
-                mQINBGMgHRcBEADXmGsxDymU1p67qp/S5/7cb5v4bpUtWu3g0uD0nDy5uv5VzjgR<br>
-                dIwoWt/jQmeQHWdWltzjIBNaQg3AGIX/tamUgfQDJfLIR7VrtRZ+gb2YQK3QkVrO<br>
-                Dka9KfTasO/b6COSKFHxDFFQVSDLGqVkD17LVMQt+rnGEPjAbn0CH/AELdZScsEO<br>
-                ySqV9/Pe/pnZDdAp3VtVDapYuQHfhKUSXfEVBasT7MW4uDxXE5dBOcMsW7mJxmCl<br>
-                kTCYVGxXuCfNC/jA0XsTE1emId8jawRLyBLP0EQyPYEkyI9BVvo6fOea0w0aM/Uc<br>
-                VxbPWxbt8RF022j8wATw8CbY59gBvkNMQ+/RMOH6zzudmS71nKPbfcNlhcJ9qYqi<br>
-                jBZncCSzBQD7v38csV/AtGlZf5bAV/hc884Pk0dJ4OPJjEmL3h2O7KXtG3L4FxSL<br>
-                0a0yrpxBRVrLE4Jma1srx7Gb8ZQxx24VRVmhhAfybH++Tr+bmn0pHVJLU0zqi02P<br>
-                vtxRF/WDyZhf9lNsPqkKZquk5Tqu1LWL918tnbAQR4c3WhoD5pWadLtxEMWpveCZ<br>
-                h4wwr1Iq8gcjlRKx8jnOQmzv3C5GRlJJQ0JT98qBGVQdjUwJrdntoMMf3ajKKFGt<br>
-                G4Etiz2Bhw4uK4pe+seRGZfH+y011w/eIcfakm9NAf5U4mfoQ6gdviPo8wARAQAB<br>
-                tDdBbmFuZGEgUml6YWxkeSBBcmlzdHlvIDxhbmFuZGFyaXphbGR5YXJpc3R5b0Bn<br>
-                bWFpbC5jb20+iQJSBBMBCAA8FiEE48fMiYXSG666ct6H2zIJZ2zRxuIFAmMgHRcC<br>
-                GyMFCwkIBwIDIgIBBhUKCQgLAgQWAgMBAh4HAheAAAoJENsyCWds0cbi5c0QAMAb<br>
-                AfZlGfXFe4a2J/PYSJzbWdT09NiAT4f/GFsk9pG2DbHXlKc4fZGHkeYiVMmSi0SZ<br>
-                8ysItJadXalWHmZ4rI9gOx+on5pcL5oMDGZmPS9QoJXiUacisb4UhLvJt9ExqUWF<br>
-                y/zRJ1Yuw5bPH+bpyrTqSqfNEuMWZM3r2HaYcIm0kJO2Rqhebl1EiMZm1H81ybuv<br>
-                +VOCfNvCxMFUk8jcz2shyEWPj/S6jyYZyaQ+vuBUnr73doebMNkWT3ENppo8NdUQ<br>
-                M77MPDW2VZAYaQQHihKqv3L34UGR7qCZ0XGYWxO5vOmv5V1O6Biy2NGy1NEqlUBx<br>
-                fo/6wASy3D4SfoGG91R2qX8uafQmFJjp+A2jcNFfyi3LtwbSnJGjBJaukFohGNAK<br>
-                zzFpD3QhA3KsbktSztpr1dvvGkIXOsqwpt2CwmhjN64VfIEOP4cMJ8FGbk3Ke8GB<br>
-                uOozriXrTw8DFaeYFXzQA3LxjRbyHQ66RBscGdMGrWPs1rxuAvYajFW3XB3mDsnl<br>
-                NlBCfrYeEFujSAzHLVk9IRP4cEdp/zHP4d0hsAFEzaF9nTFiEH4Hm+CaCEhwlVA0<br>
-                xuOtA6bxKyNTCm2ESqw9KY4T/xN49L11LZsZxY8HcOJzs83er4Rg56mta3RAJ5SD<br>
-                2JUPm2XMku8W60y9OgJc+vAkhbEeh5UfQNM/t+uXuQINBGMgHRcBEADE7kqmK9Pp<br>
-                Hb3uo++LzWppEansds3ZwM0xUtB10GsS9lff9I1P7P2gY1J2gcjLLilRbQe/4meY<br>
-                olGi7+wXSF4setknLsB5+MMNLXAw/63ckbx07BsQotbIvup89KKZXmdU9JshJqGp<br>
-                fHUjiSu4izfp32BKn54hKu09A5MYx6j5d4+COs8gL6gi925ckCVyJ1NkGHhgj2xU<br>
-                R5v7I+96jxi0wZyEI1oIW29E58VvCRRRcu5iHZ1NXfMRE7Zv/UFAqPQWWi8gmPhN<br>
-                V4mTdsvfMXXrGN2b48KiV8k2wpoB0lGKmrP+VfRL9dDSmed6/1n428MwzC9DA4Lj<br>
-                HWikJuG/XZoNIDRwPDh+7//k9zHLESV4QRe7lUCGIXAx9FBDzFv9CFFqbc1lsy9Y<br>
-                u/YlQcf08ly5786nzoj1SOrVtYe6SWuxtZRe6y2FlUVLjRuGxdnn6VzdXERR6UAQ<br>
-                icngpgsHK4nGG+zb4gQow68kDWfAA7lJmJ3ol5+tTDI7Goxly7NGLnsNdDWzboqr<br>
-                cT3HflhtuVqYIgxRBmbP1CpCsXi7GbA5rFMc0NSHDeDHeAVirlJILnqLTDt+PCsV<br>
-                +fWoL9wE7AxLEi2mqlYSyrqqF0B9oGRF5SJFYw0ODb/NeA/3Zk7y68RVM4EpimYl<br>
-                MuTdmYTZsnzBLMBig4e+MF7yq4+5YnQnaQARAQABiQI2BBgBCAAgFiEE48fMiYXS<br>
-                G666ct6H2zIJZ2zRxuIFAmMgHRcCGwwACgkQ2zIJZ2zRxuJ9kRAAoZ/r66cs4i5w<br>
-                bTCSTBhMEloMtzHhki1Lcg7FZF7VnqTMiXxh6XTzn8dVGS8KT9McZDr0vOeetmfp<br>
-                BPH4ndagXhkOOR5ZMbr0xZQTWvnBTyooZpiW6Y5OHph0HeKWTHjB3oSat2R6qqNf<br>
-                1P36odaLEexmE8Kpq1yWKfcTnHC14kKodKPzuLLpgOVdaxKJPyB7czqANFcgSho8<br>
-                YplpTmfdOzlEjukEI8pTtYqk6AsfPirk8lMj6wtptR/cDuR1O0l2qZMu6hClmY06<br>
-                YYDRpW2ZgDA6dcvs7gwM3i+IdvwJDg0/autdZ5tscV++ahqd+VSw6rdO2gPuNnYV<br>
-                9X+XZG5sDqRfbsIBtsfFmORNSQyvJByE0I1Hw82O7zSkpG8NfzRffMsiFSn/QzVh<br>
-                pJiieERimBqMlKTjLLc3yFIjHhIDH4uTzFAlFJWnX44Cv5gW7YCPExPaEiEaFom8<br>
-                DtxpQxargh7HZTMJcRt/2lnO/Hb/R4CXLWvhBZyu3XfGFCZTpvT2UNs9kOw0HGrP<br>
-                i18mjDYOci0m/Xh6/LIhj7znGJJJNzbRnosO9GnkOPuWPHyRpojheLQc3dljHx9I<br>
-                dfVitLy12imf1DjMQv2bEHVRWFGhgjKCPxxG/lUdZMlMlYAWQTYTH8dkmsTHxzA4<br>
-                H8zFKhnoeVhw9SYuWRC85PBKd43KAw4=<br>
-                =a53R<br>
-                -----END PGP PUBLIC KEY BLOCK-----<br>
+            <div class="codeDiv alignCenter" style="height: 100px; overflow-y: scroll">
+                -----BEGIN PGP PUBLIC KEY BLOCK-----<br />
+                <br />
+                mQINBGMgHRcBEADXmGsxDymU1p67qp/S5/7cb5v4bpUtWu3g0uD0nDy5uv5VzjgR<br />
+                dIwoWt/jQmeQHWdWltzjIBNaQg3AGIX/tamUgfQDJfLIR7VrtRZ+gb2YQK3QkVrO<br />
+                Dka9KfTasO/b6COSKFHxDFFQVSDLGqVkD17LVMQt+rnGEPjAbn0CH/AELdZScsEO<br />
+                ySqV9/Pe/pnZDdAp3VtVDapYuQHfhKUSXfEVBasT7MW4uDxXE5dBOcMsW7mJxmCl<br />
+                kTCYVGxXuCfNC/jA0XsTE1emId8jawRLyBLP0EQyPYEkyI9BVvo6fOea0w0aM/Uc<br />
+                VxbPWxbt8RF022j8wATw8CbY59gBvkNMQ+/RMOH6zzudmS71nKPbfcNlhcJ9qYqi<br />
+                jBZncCSzBQD7v38csV/AtGlZf5bAV/hc884Pk0dJ4OPJjEmL3h2O7KXtG3L4FxSL<br />
+                0a0yrpxBRVrLE4Jma1srx7Gb8ZQxx24VRVmhhAfybH++Tr+bmn0pHVJLU0zqi02P<br />
+                vtxRF/WDyZhf9lNsPqkKZquk5Tqu1LWL918tnbAQR4c3WhoD5pWadLtxEMWpveCZ<br />
+                h4wwr1Iq8gcjlRKx8jnOQmzv3C5GRlJJQ0JT98qBGVQdjUwJrdntoMMf3ajKKFGt<br />
+                G4Etiz2Bhw4uK4pe+seRGZfH+y011w/eIcfakm9NAf5U4mfoQ6gdviPo8wARAQAB<br />
+                tDdBbmFuZGEgUml6YWxkeSBBcmlzdHlvIDxhbmFuZGFyaXphbGR5YXJpc3R5b0Bn<br />
+                bWFpbC5jb20+iQJSBBMBCAA8FiEE48fMiYXSG666ct6H2zIJZ2zRxuIFAmMgHRcC<br />
+                GyMFCwkIBwIDIgIBBhUKCQgLAgQWAgMBAh4HAheAAAoJENsyCWds0cbi5c0QAMAb<br />
+                AfZlGfXFe4a2J/PYSJzbWdT09NiAT4f/GFsk9pG2DbHXlKc4fZGHkeYiVMmSi0SZ<br />
+                8ysItJadXalWHmZ4rI9gOx+on5pcL5oMDGZmPS9QoJXiUacisb4UhLvJt9ExqUWF<br />
+                y/zRJ1Yuw5bPH+bpyrTqSqfNEuMWZM3r2HaYcIm0kJO2Rqhebl1EiMZm1H81ybuv<br />
+                +VOCfNvCxMFUk8jcz2shyEWPj/S6jyYZyaQ+vuBUnr73doebMNkWT3ENppo8NdUQ<br />
+                M77MPDW2VZAYaQQHihKqv3L34UGR7qCZ0XGYWxO5vOmv5V1O6Biy2NGy1NEqlUBx<br />
+                fo/6wASy3D4SfoGG91R2qX8uafQmFJjp+A2jcNFfyi3LtwbSnJGjBJaukFohGNAK<br />
+                zzFpD3QhA3KsbktSztpr1dvvGkIXOsqwpt2CwmhjN64VfIEOP4cMJ8FGbk3Ke8GB<br />
+                uOozriXrTw8DFaeYFXzQA3LxjRbyHQ66RBscGdMGrWPs1rxuAvYajFW3XB3mDsnl<br />
+                NlBCfrYeEFujSAzHLVk9IRP4cEdp/zHP4d0hsAFEzaF9nTFiEH4Hm+CaCEhwlVA0<br />
+                xuOtA6bxKyNTCm2ESqw9KY4T/xN49L11LZsZxY8HcOJzs83er4Rg56mta3RAJ5SD<br />
+                2JUPm2XMku8W60y9OgJc+vAkhbEeh5UfQNM/t+uXuQINBGMgHRcBEADE7kqmK9Pp<br />
+                Hb3uo++LzWppEansds3ZwM0xUtB10GsS9lff9I1P7P2gY1J2gcjLLilRbQe/4meY<br />
+                olGi7+wXSF4setknLsB5+MMNLXAw/63ckbx07BsQotbIvup89KKZXmdU9JshJqGp<br />
+                fHUjiSu4izfp32BKn54hKu09A5MYx6j5d4+COs8gL6gi925ckCVyJ1NkGHhgj2xU<br />
+                R5v7I+96jxi0wZyEI1oIW29E58VvCRRRcu5iHZ1NXfMRE7Zv/UFAqPQWWi8gmPhN<br />
+                V4mTdsvfMXXrGN2b48KiV8k2wpoB0lGKmrP+VfRL9dDSmed6/1n428MwzC9DA4Lj<br />
+                HWikJuG/XZoNIDRwPDh+7//k9zHLESV4QRe7lUCGIXAx9FBDzFv9CFFqbc1lsy9Y<br />
+                u/YlQcf08ly5786nzoj1SOrVtYe6SWuxtZRe6y2FlUVLjRuGxdnn6VzdXERR6UAQ<br />
+                icngpgsHK4nGG+zb4gQow68kDWfAA7lJmJ3ol5+tTDI7Goxly7NGLnsNdDWzboqr<br />
+                cT3HflhtuVqYIgxRBmbP1CpCsXi7GbA5rFMc0NSHDeDHeAVirlJILnqLTDt+PCsV<br />
+                +fWoL9wE7AxLEi2mqlYSyrqqF0B9oGRF5SJFYw0ODb/NeA/3Zk7y68RVM4EpimYl<br />
+                MuTdmYTZsnzBLMBig4e+MF7yq4+5YnQnaQARAQABiQI2BBgBCAAgFiEE48fMiYXS<br />
+                G666ct6H2zIJZ2zRxuIFAmMgHRcCGwwACgkQ2zIJZ2zRxuJ9kRAAoZ/r66cs4i5w<br />
+                bTCSTBhMEloMtzHhki1Lcg7FZF7VnqTMiXxh6XTzn8dVGS8KT9McZDr0vOeetmfp<br />
+                BPH4ndagXhkOOR5ZMbr0xZQTWvnBTyooZpiW6Y5OHph0HeKWTHjB3oSat2R6qqNf<br />
+                1P36odaLEexmE8Kpq1yWKfcTnHC14kKodKPzuLLpgOVdaxKJPyB7czqANFcgSho8<br />
+                YplpTmfdOzlEjukEI8pTtYqk6AsfPirk8lMj6wtptR/cDuR1O0l2qZMu6hClmY06<br />
+                YYDRpW2ZgDA6dcvs7gwM3i+IdvwJDg0/autdZ5tscV++ahqd+VSw6rdO2gPuNnYV<br />
+                9X+XZG5sDqRfbsIBtsfFmORNSQyvJByE0I1Hw82O7zSkpG8NfzRffMsiFSn/QzVh<br />
+                pJiieERimBqMlKTjLLc3yFIjHhIDH4uTzFAlFJWnX44Cv5gW7YCPExPaEiEaFom8<br />
+                DtxpQxargh7HZTMJcRt/2lnO/Hb/R4CXLWvhBZyu3XfGFCZTpvT2UNs9kOw0HGrP<br />
+                i18mjDYOci0m/Xh6/LIhj7znGJJJNzbRnosO9GnkOPuWPHyRpojheLQc3dljHx9I<br />
+                dfVitLy12imf1DjMQv2bEHVRWFGhgjKCPxxG/lUdZMlMlYAWQTYTH8dkmsTHxzA4<br />
+                H8zFKhnoeVhw9SYuWRC85PBKd43KAw4=<br />
+                =a53R<br />
+                -----END PGP PUBLIC KEY BLOCK-----<br />
             </div>
-            <div style="text-align:center;margin-top:2rem;">
+            <div style="text-align: center; margin-top: 2rem">
                 <a class="button" href="/datas/aristyo_public_key.asc" download="Public ASC Key">Download Public Key</a>
             </div>
-            <div style="text-align:center;margin-top:1.5rem;">
-                <a href="mailto:anandarizaldyaristyo+github@gmail.com">Contact me</a> via the <a href="https://www.thunderbird.net/">thunderbird email client.</a>
-            </div>
+            <div style="text-align: center; margin-top: 1.5rem"><a href="mailto:anandarizaldyaristyo+github@gmail.com">Contact me</a> via the <a href="https://www.thunderbird.net/">thunderbird email client.</a></div>
         </div>
     </section>
 </div>
-<script>AOS.init();</script>
+<script>
+    AOS.init();
+</script>

@@ -1,45 +1,61 @@
-<script>if(document.URL.indexOf("articles.html") >= 0)document.location.href="/";</script>
+<script>
+    if (document.URL.indexOf("/pages/articles") >= 0) document.location.href = "/#articles";
+    window.history.pushState(null, null, "/articles");
+</script>
 <div style="margin-top: 6.5rem">
     <style>
-        .article-content{margin-right:50%;margin-left:7ch;}
-        .article-title-date{text-align: left;margin-left: 40px;}
-        .window{
+        .article-content {
+            margin-right: 50%;
+            margin-left: 7ch;
+        }
+        .article-title-date {
+            text-align: left;
+            margin-left: 40px;
+        }
+        .window {
             width: 570px;
             position: fixed;
             right: 200px;
             top: 150px;
         }
-        @media screen and (max-width: 1100px){
-            .article-title-date{text-align: center;margin-left: 0px;}
-            .window{display: none;}
-            .article-content{
-                margin-right:3ch;
+        @media screen and (max-width: 1100px) {
+            .article-title-date {
+                text-align: center;
+                margin-left: 0px;
+            }
+            .window {
+                display: none;
+            }
+            .article-content {
+                margin-right: 3ch;
                 margin-left: 3ch;
                 text-align: justify;
             }
         }
     </style>
-    <img data-aos="fade-in" src="/images/window.webp" alt="window" class="window">
+    <img data-aos="fade-in" src="/images/window.webp" alt="window" class="window" />
     <section>
-        <h1 style="margin-left:2ch" data-aos="fade-in">
+        <h1 style="margin-left: 2ch" data-aos="fade-in">
             <p>
-                While you're here, why don't you read something interesting.<br>
+                While you're here, why don't you read something interesting.<br />
                 You might find some insights that you can use in your life...
-            </p>    
+            </p>
         </h1>
     </section>
-    <section id="articles-section" data-aos="fade-in" data-aos-duration="3000" style="margin-top:4rem"></section>
+    <section id="articles-section" data-aos="fade-in" data-aos-duration="3000" style="margin-top: 4rem"></section>
 </div>
 
 <script>
-    fetch('/datas/articles.json').then((response) => response.json()).then((json)=>{
-        let articles = document.getElementById('articles-section');
-        var article_poss;
-        for(var i in json){
-            let article = document.createElement('article');
-            if(json[i].author == "Rizaldy Aristyo") article_poss='my-article';
-            else article_poss='not-my-article';
-            article.innerHTML = `
+    fetch("/datas/articles.json")
+        .then((response) => response.json())
+        .then((json) => {
+            let articles = document.getElementById("articles-section");
+            var article_poss;
+            for (var i in json) {
+                let article = document.createElement("article");
+                if (json[i].author == "Rizaldy Aristyo") article_poss = "my-article";
+                else article_poss = "not-my-article";
+                article.innerHTML = `
                 <div id="${article_poss}">
                     <h2 class="article-title-date">${json[i].title}</h2>
                     <h4 class="article-title-date">${json[i].date} - ${json[i].author}</h4>
@@ -49,8 +65,8 @@
                     </p>
                 <div>
             `;
-            articles.appendChild(article);
-        }
-    });
+                articles.appendChild(article);
+            }
+        });
     AOS.init();
 </script>

@@ -1,31 +1,35 @@
-<script>if(document.URL.indexOf("tsb.html") >= 0)document.location.href="/";</script>
+<script>
+    if (document.URL.indexOf("/pages/tsb.html") >= 0) document.location.href = "/#tsb";
+    window.history.pushState(null, null, "/tsb");
+</script>
 <style>
-    .description{
+    .description {
         margin-left: 30%;
         margin-right: 30%;
     }
-    table{
+    table {
         border-collapse: collapse;
         margin-left: 12px;
         position: fixed;
         bottom: 22px;
         left: 7px;
     }
-    tr,td{
+    tr,
+    td {
         border-collapse: collapse;
         padding: 5px;
-        color:white
-    }
-    a{
         color: white;
-        text-decoration:none;
     }
-    a:hover{
+    a {
         color: white;
-        text-decoration:underline;
+        text-decoration: none;
+    }
+    a:hover {
+        color: white;
+        text-decoration: underline;
     }
     @media only screen and (max-width: 600px) {
-        .description{
+        .description {
             margin-left: 10%;
             margin-right: 10%;
         }
@@ -33,38 +37,39 @@
 </style>
 <div style="margin-top: 6.5rem">
     <section style="margin-left: 20px" class="alignCenter2">
-        <img data-aos="fade-in" src="https://github.com/threestackingbirds.png" alt="tsb" style="width: 120px; border-radius:15px 15px 15px 15px">
+        <img data-aos="fade-in" src="https://github.com/threestackingbirds.png" alt="tsb" style="width: 120px; border-radius: 15px 15px 15px 15px" />
         <h1 data-aos="fade-in">Three Stacking Birds R&DProd.</h1>
         <p data-aos="fade-in" data-aos-duration="1000" class="description">
-            Three Stacking Bird Research, Development, and Production is a small team of developers who are passionate about creating open source projects. Our projects are small, but we're sure that it will take an impact for the human society in the earth anywhere. We believe it is possible to make programming easier and suitable for everyone as it is our set sail destination. 
+            Three Stacking Bird Research, Development, and Production is a small team of developers who are passionate about creating open source projects. Our projects are small, but we're sure that it will take an impact for the human
+            society in the earth anywhere. We believe it is possible to make programming easier and suitable for everyone as it is our set sail destination.
         </p>
     </section>
     <section style="margin-top: 2rem" class="alignCenter2" data-aos="fade-in" data-aos-duration="1000">
         <h1>Our Projects</h1>
         <h3>tsb-pylib</h3>
         <p>
-            Multi purpose python library for python developers.<br>
+            Multi purpose python library for python developers.<br />
             Machine Learning, Maths, and more.
         </p>
         <h3>tsb-realworldlist</h3>
         <p>
-            List of real world wordlist for enhancing your password security.<br>
+            List of real world wordlist for enhancing your password security.<br />
             It's captured from real world data that is publicly available.
         </p>
         <h3>tsb-cssframew</h3>
         <p>
-            Component based CSS framework for web developers.<br>
+            Component based CSS framework for web developers.<br />
             It's easy to use, only include the component that are frequently needed.
         </p>
         <h3>tsb-gs-telegrambot</h3>
         <p>
-            Google App Script Powered Serverless Telegram Bot<br>
+            Google App Script Powered Serverless Telegram Bot<br />
             Integrated with Google Spreadsheet API for storing data.
         </p>
     </section>
     <div style="margin-bottom: 400px"></div>
     <section>
-        <table style="margin-top: -10px;" data-aos="fade-in" data-aos-duration="3000">
+        <table style="margin-top: -10px" data-aos="fade-in" data-aos-duration="3000">
             <tr>
                 <td colspan="2"><h3>Visit Us!</h3></td>
             </tr>
@@ -79,4 +84,6 @@
         </table>
     </section>
 </div>
-<script>AOS.init();</script>
+<script>
+    AOS.init();
+</script>
