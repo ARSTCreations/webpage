@@ -69,12 +69,20 @@
             height: 93vh;
             margin-left: 0px;
         }
+        @media screen and (max-width: 600px) {
+            .pulsar-map {
+                width: 374px;
+            }
+            .font-resize {
+                font-size: 16px;
+            }
+        }
     </style>
     <section style="margin-top: 2rem; overflow-x: hidden">
         <div class="cutoutImg" data-aos="fade-in" data-aos-duration="1000">
             <h1 class="cutout" data-aos="fade-in" data-aos-duration="1000"><a target="_blank" rel="noopener noreferrer" href="https://github.com/ARSTCreations/">Rizaldy Aristyo</a></h1>
             <div data-aos="fade-in" data-aos-duration="3000">
-                <p>
+                <p class="font-resize">
                     My name is Rizaldy and I am a Junior Devops Engineer and a Cyber Security Enthusiast.<br />
                     I'm also the leader of Three Stacking Bird RNDProd., a non-profit organization that<br />
                     focuses on Research, Development, and Production in any sector of technology and information.<br />
@@ -82,7 +90,7 @@
                     <br />I don't have any tech stack in particular,<br />anything works when you just patch things up and then tidy it in the end.<br />(half joking lol but fr)
                 </p>
             </div>
-            <div style="position: absolute; right: 60px; bottom: 30px" data-aos="fade-in">
+            <div style="position: absolute; right: 60px; bottom: 30px" data-aos="fade-in" class="font-resize">
                 Love the winter scenery?<br />
                 It was <a style="text-decoration: none; color: yellow" target="_blank" rel="noopener noreferrer" href="https://unsplash.com/@samuel_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel's</a>, great
                 isn't it?
@@ -143,7 +151,7 @@
             If we ever lost so far away someday,<br />
             we will always find the way back home, anytime.
         </p>
-        <img src="/images/pulsar_map.webp" alt="pulsar_map" style="width: 374px" />
+        <img src="/images/pulsar_map.webp" alt="pulsar_map" class="pulsan-map" />
     </section>
     <section class="alignCenter2" style="margin-top: 15rem; margin-bottom: 1rem; color: gray">it's always nice to scroll to the end of the page, isn't it?</section>
     <script>
